@@ -51,10 +51,12 @@ function PHPMailerTestAction()
         $mailerRes = $mailer->send();
 
         if ($mailerRes != '1') throw new PMAException($mailer->ErrorInfo);
+
+        var_dump($mailerRes);
     } catch (PMAException $e) {
         var_dump("Message could not be sent. Mailer Error: {$e->getMessage()}");
     } finally {
-        var_dump($mailerRes);
+        // var_dump($mailerRes);
     }
 }
 
