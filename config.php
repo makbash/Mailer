@@ -1,6 +1,6 @@
 <?php
 
-$config = array(
+return array(
     'lang'     => 'tr', // Enable verbose debug output
     'debug'    => FALSE, // Enable verbose debug output
     'protocol' => 'smtp', // Set mailer to use SMTP or MAIL
@@ -14,5 +14,3 @@ $config = array(
     'from'     => 'no-reply@yoursite.com',
     'fromName' => 'www.yoursite.com',
 );
-
-return $config;
