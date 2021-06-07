@@ -17,10 +17,10 @@ function PHPMailerTestAction()
         //Server settings
         $mailer->isSMTP();                                            //Send using SMTP
         $mailer->SMTPDebug  = SMTP::DEBUG_SERVER;                     //Enable verbose debug output
-        $mailer->Host       = 'smtp.yandex.com';                      //Set the SMTP server to send through
+        $mailer->Host       = '<your.smtp.server.url>';               //Set the SMTP server to send through
         $mailer->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mailer->Username   = 'no-reply@yoursite.com';                //SMTP username
-        $mailer->Password   = '12345678';                             //SMTP password
+        $mailer->Password   = '<your.smtp.password>';                 //SMTP password
         $mailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
         $mailer->Port       = 465;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 

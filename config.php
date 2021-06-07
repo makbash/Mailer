@@ -5,9 +5,9 @@ return array(
     'debug'    => FALSE, // Enable verbose debug output
     'protocol' => 'smtp', // Set mailer to use SMTP or MAIL
     'auth'     => TRUE, // Enable SMTP authentication
-    'host'     => 'smtp.yandex.com', // Specify main and backup SMTP servers
+    'host'     => '<your.smtp.server.url>', // Specify main and backup SMTP servers
     'user'     => 'no-reply@yoursite.com', // SMTP username
-    'pass'     => '12345678', // SMTP password
+    'pass'     => '<your.smtp.password>', // SMTP password
     'port'     => 465, // TCP port to connect to
     'secure'   => 'ssl', // Enable TLS encryption, `ssl` also accepted
     'html'     => TRUE,
